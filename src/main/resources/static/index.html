@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>My cafe</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <div style="height: 100px; background-color: #f07579" class="d-flex justify-content-center align-items-center">
+        <span style="color: white">My header</span>
+    </div>
+    <body>
+        <div style="width: 700px" class="container-fluid p-5">
+            <div class="text-center">
+                <h1>내 정보</h1>
+            </div>
+            <form class="row g-3">
+                <div class="container d-flex justify-content-center mt-5">
+                    <input type="file" id="fileInput" style="display: none" /><label for="fileInput">
+                        <div class="avatar-container">
+                            <img
+                                src="./images/avatar_circle.png"
+                                alt="Profile Picture"
+                                id="avatar"
+                                class="avatar img-fluid rounded-circle"
+                            />
+                            <span class="avatar-text">수정</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="row row-cols-2 g-3 align-items-center">
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">이름</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" id="inputName" class="form-control" />
+                    </div>
+                </div>
+                <div class="row row-cols-2 g-3 align-items-center">
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">비밀번호</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="password" id="inputPassword6" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-6"><button type="submit" class="btn btn-danger">회원탈퇴</button></div>
+                    <div class="p-0 col-6 d-flex align-items-center justify-content-end">
+                        <button type="button" class="btn btn-outline-info">수정</button>
+                        <button type="submit" class="ms-3 btn btn-primary">저장</button>
+                    </div>
+                </div>
+                <!-- Bottom menu -->
+
+                <div class="btn-group bottom-menu" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-outline-primary">나의 정보</button>
+                    <button type="button" class="btn btn-outline-primary">나의 리뷰</button>
+                    <button type="button" class="btn btn-outline-primary">나의 찜</button>
+                </div>
+                <!-- <div class="row text-center bottom-menu">
+                    <div class="col-4 no-margin">
+                        <button type="button" class="h-100 btn btn-primary btn-block">Bottom Menu Button</button>
+                    </div>
+                    <div class="col-4 no-margin">
+                        <button type="button" class="h-100 btn btn-primary btn-block">Bottom Menu Button</button>
+                    </div>
+                    <div class="col-4 no-margin">
+                        <button type="button" class="h-100 btn btn-primary btn-block">Bottom Menu Button</button>
+                    </div>
+                </div> -->
+            </form>
+        </div>
+    </body>
+    <div style="height: 200px; background-color: #f07579" class="d-flex justify-content-center align-items-center">
+        <span style="color: white">My footer</span>
+    </div>
+</html>
