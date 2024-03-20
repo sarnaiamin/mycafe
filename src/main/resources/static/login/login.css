@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: GangwonEdu_OTFBoldA;
+}
+@font-face {
+    font-family: "GangwonEdu_OTFBoldA";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #f3c58f;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.form-box {
+    width: 90%;
+    height: 700px;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 50px;
+    text-align: center;
+}
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+
+    position: relative;
+}
+.form-box h1::after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #f07579;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i {
+    margin-left: 15px;
+    color: #999;
+}
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+form p a {
+    text-decoration: none;
+    color: #f07579;
+}
+
+.btn-field {
+    width: 80%;
+    top: 85%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.btn-field button {
+    flex-basis: 35%;
+    background: #f07579;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group {
+    height: 280px;
+}
+.btn-field .disable {
+    background: #eaeaea;
+    color: #555;
+}
+
+.divider {
+    color: gray;
+    position: fixed;
+    top: 55%;
+    width: 80%;
+    display: flex;
+}
+
+.ml-5 {
+    margin-left: 20px;
+}
+
+.sns-container {
+    display: none;
+    color: gray;
+    width: 100%;
+}
+
+.circular-button {
+    width: 54px; /* Adjust the width of the button */
+    height: 54px; /* Adjust the height of the button */
+    border-radius: 50%; /* Make the border-radius half of the width/height to create a circle */
+    background-color: #007bff; /* Change background color */
+    color: white; /* Change text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;
+    border: none;
+    outline: none; /* Remove outline */
+    padding: 4px;
+}
+
+.social-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00acee;
+}
+
+.google {
+    background-color: #fff;
+    color: #000;
+    border: 1px outset #000;
+}
+
+.naver {
+    background-color: #03c75a;
+}
+
+.kakao {
+    background-color: #fbbc04;
+}
+
+.facebook-btn {
+    display: inline-block;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* Makes it circular */
+    overflow: hidden; /* Ensures the image is clipped to the circle */
+}
+
+.facebook-btn img {
+    width: 100%; /* Makes the image fill the circular container */
+    height: auto; /* Maintains aspect ratio */
+}

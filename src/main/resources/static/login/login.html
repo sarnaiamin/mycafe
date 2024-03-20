@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="./login.css" />
+        <script src="https://kit.fontawesome.com/35c503f1b7.js" crossorigin="anonymous"></script>
+        <script defer src="./login.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+                <h1 id="title">회원 가입</h1>
+                <form>
+                    <div class="input-group">
+                        <div class="input-field" id="idField">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="아이디 입력" />
+                        </div>
+                        <div class="input-field" id="passwordField">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="비밀번호 입력" />
+                        </div>
+                        <div class="input-field" id="nameField">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="이름 입력" />
+                        </div>
+                        <div class="input-field" id="phonenumberField">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="number" placeholder="전화번호 입력" />
+                        </div>
+                        <div class="input-field" id="yearField">
+                            <i class="fa-solid fa-year"></i>
+                            <input type="date" placeholder="생년월일 입력" />
+                        </div>
+                        <div class="input-field" id="emailField">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="이메일 입력" />
+                        </div>
+                        <p>비밀번호 잊으셨나요?<a href="#">여기 누르세요!</a></p>
+                    </div>
+                    <div id="buttonContainer" class="btn-field">
+                        <button type="button" id="signupBtn">가입</button>
+                        <button type="button" class="disable ml-5" id="signinBtn">로그인</button>
+                    </div>
+                    <div id="snsContainer" class="sns-container">
+                        <hr class="divider" />
+                        <button class="social-button naver">네이버</button>
+                        <button class="social-button kakao">카카오</button>
+                        <button class="social-button facebook">Facebook</button>
+                        <a href="https://www.facebook.com" target="_blank" class="facebook-btn">
+                            <img src="../images/facebook_logo.png" alt="Facebook Logo" />
+                        </a>
+                        <button class="social-button google">Google</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
